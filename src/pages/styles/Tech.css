@@ -1,0 +1,94 @@
+span{
+	mix-blend-mode: normal;
+}
+
+.tech{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../../images/technology/background-technology-desktop.jpg');
+}
+
+span{
+	mix-blend-mode: normal;
+}
+
+
+.content img{
+	opacity: 0;
+	animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn{
+	100%{
+		opacity: 1;
+	}
+}
+
+.content{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.content>.description{
+	width: 50%;
+}
+
+h1{
+	font-family: "Bellefair",serif;
+    font-size: 100px;
+    line-height: 115px;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+h2{
+	text-transform: uppercase;
+}
+
+
+.description{
+	width: 25%;
+	text-align: justify;
+	position: relative;
+}
+
+.description p{
+	width: 400px;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-family: "Barlow",sans-serif;
+    font-size: 18px;
+    line-height: 32px
+}
+
+.selector{
+	display: flex;
+	flex-direction: column;
+}
+
+.selector p{
+	font-size: 2rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	width: 100px;
+	height: 100px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 100%;
+}
+
+
+.selector p.active{
+	transform: scale(1);
+	background: #fff;
+	color: #000;
+}

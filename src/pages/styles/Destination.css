@@ -1,0 +1,190 @@
+.destination,.crew{
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background-image: url('../../images/destination/background-destination-desktop.jpg');
+}
+
+span{
+	mix-blend-mode: normal;
+	opacity: 0.5;
+}
+
+.crew{
+	background-image: url('../../images/crew/background-crew-desktop.jpg');
+	overflow: scroll;
+}
+
+.content img{
+	opacity: 0;
+	animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn{
+	100%{
+		opacity: 1;
+	}
+}
+
+.content{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.content>.description{
+	width: 50%;
+}
+
+h1{
+	font-family: "Bellefair",serif;
+    font-size: 100px;
+    line-height: 115px;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+
+.description{
+	width: 25%;
+	text-align: justify;
+	position: relative;
+}
+
+.description p{
+	width: 400px;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-family: "Barlow",sans-serif;
+    font-size: 18px;
+    line-height: 32px
+}
+
+.dist-time{
+	display: flex;text-align: center;
+	justify-content: flex-start;
+}
+
+.dist-time div{
+	display: inline-block;
+	width: 300px;
+}
+
+.avg{
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    color: #d0d6f9;
+}
+
+p.details{
+	font-family: Bellefair;
+    font-size: 1.6rem;
+    line-height: 32px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+hr{
+	position: relative;
+	left: 0;
+	text-align: left;
+	width: 700px;
+}
+
+.selector{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.selector p:hover{
+	opacity: 1;
+}
+
+.selector p{
+	opacity: 0.5;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 100%;
+	margin: 20px;
+
+}
+
+.selector .active{
+	transform: scale(2);
+	opacity: 1;
+}
+
+.role {
+	font-family: Bellefair;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    line-height: 37px;
+    mix-blend-mode: normal;
+    opacity: .5;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
+
+  div.description h1{
+  	font-size: 3rem;
+  	align-items: flex-start;
+  	line-height: 2;
+  }
+
+  
+  .selector{
+  	flex-direction: row;
+  }
+  .selector p{
+  	height: 12px;
+  	width: 12px;
+  }
+
+  .planet-image{
+  	transform: scale(0.5);
+  	margin: 0;
+  }
+
+  .description p{
+	width: 100%;
+	padding: 0 20px;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+}
+
+@media only screen and (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+}
